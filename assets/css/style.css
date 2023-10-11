@@ -1,0 +1,72 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+/* header section start */
+a{
+    text-decoration: none;
+    color:#fff;
+}
+header{
+    width:100%;
+    height:40px;
+    display:flex;
+    justify-content: space-between;
+    color:#fff;
+    padding:0px 125px;
+    background-color: #131E3A;
+    align-items: center;
+}
+header ul li{
+    margin-right:15px;
+    display:inline-block;
+}
+header ul li a{
+    font-weight: 600px;
+}
+header ul li a.active{
+  color:rgb(238, 38, 92);
+}
+header ul li a.heading{
+    font-size: xx-large;
+    color:red;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 800;
+}
+header ul li a.login{
+    color:#e1ea45;
+}
+/* header section end */
+/* banner section start */
+.banner{
+    width:100%;
+    height:500px;
+    color:#fff;
+    background:url(../img/pic1.png.jpeg);
+    background-size: cover;
+}
+.banner div{
+    width:500px;
+    height:200px;
+    margin-left: 200px;
+}
+.banner div h1{
+    font-size: 40px;
+    font-family:sans-serif;
+    padding-top:70px;
+    font-weight:100;
+    color: #070000f9;
+    
+    
+}
+.banner div h4{
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #070000f9;
+
+}
+    
+
+/* banner section start */
