@@ -11,7 +11,8 @@
     <!--header section start-->
     <header>
     <ul>
-        <li><a href="javascript:void()" class="heading">momondo</a></li>
+        <li><a href="javascript:void()"><img src="/assets/img/Logo2.png" height="25px;" width="150px" style="background-color: black;" alt="">
+        </a></li>
         <li><a href="javascript:void()" class="active">Flight</a></li>
         <li><a href="javascript:void()">Hotel</a></li>
         <li><a href="javascript:void()">Car Hire</a></li>
@@ -19,22 +20,174 @@
     </ul>
     <ul>
         <li>
-            <a href="javascript:void()"><i class="fa-brands fa-font-awesome"></i>
+            <a href="javascript:void()"><i class="fa-regular fa-flag"></i>
                 English</a></li>
         <li><a href="javascript:void()" class="login">Login</a></li>
     </ul>
     </header>
-    <!--header section end-->
+    <!--/header section end-->
     <!--banner section start-->
     <section class="banner">
-       <div>
-        <h1>"The best place to find the cheapest airfares"</h1>
-        <h4>-every single time</h4>
-       </div>
+      <h1>"The best place to find<br> the cheapest airfares"</h1>
+      <h4>-every single time</h4>
+      <form action="">
+        <div>
+          <div class="switchButton">
+          <button type="button" class="active">
+              <i class="fa-solid fa-plane-departure"></i> Flight</button>
+          <button type="button">
+              <i class="fa-solid fa-hotel"></i> Hotels</button>
+          <button type="button">
+              <i class="fa-solid fa-car"></i> Cars</button><br>
+         </div>
+         <div class="searchForm">
+          <label for="origin-city">Origin city</label>
+          <input type="text" name="origin-city" id="origin-city" placeholder="Enter Origin City">
+          <span><i class="fa-solid fa-arrow-right-arrow-left" style="color:rgb(166, 239, 239)"></i></span>
+          
+          <label for="Destination-city-city">Destination city city</label>
+          <input type="text" name="destination-city" id="destination-city" placeholder="Enter Destination City">
+          
+          <label for="trav-start-date">Start Date</label>
+          <input type="date" name="trav-start-date" id="trav-start-date" placeholder="Enter start date">
+          
+          <label for="trav-end-date">End Date</label>
+          <input type="date" name="trav-end-date" id="trav-end-date" placeholder="Enter end date">
 
+          <label for="select-passanger">End Date</label>
+          <select name="select-passenger" id="select-passenger">
+            <option selected>select passenger</option>
+            <option value="1-pass">passenger-1</option>
+            <option value="2-pass">passenger-2</option>
+            <option value="3-pass">passenger-3</option>
+            <option value="4-pass">passenger-4</option>
+            <option value="5-pass">passenger-5</option>
+           </select>
+          </div> 
+        <div class="trip">
+          <ul>
+           <li><i class="fa-solid fa-arrows-rotate"></i>
+              <label for="Trip-type">Trip Type</label>
+              <select name="trip type" ide="trip type">
+                <option selected>Return Trip</option>
+                <option value="No-Return">Only Go</option>
+              </select>
+           </li>
+           <li><i class="fa-solid fa-ticket"></i>
+             <label for="Ticket-class">Ticket Class</label>
+               <select name="ticket-class" ide="ticket-class">
+                <option selected value="economy">Economy</option>
+                <option value="primary">Primary</option>
+               </select>
+           </li>
+           <li>
+             <input type="checkbox"> Direct Flight only  
+           </li>
+           <li>
+             <input type="checkbox"> Include Nearby Airport 
+           </li>
+          </ul>
+        </div>
+    </div>
+        <div>
+          <button type="submit" class="smt">Search</button>
+        </div>
+   </form>
+    </section>
+    <!--/banner section end-->
+    <!-- some Fun section start -->
+   <section class="fun">
+    <h2>SOME FUN WE COVERED</h2>
+    <ul>
+      <li><div>
+        <i class="fa-solid fa-person-biking" style="height:40px;width:40px;"></i>
+        <br>5670M<BR>CYCLING TRACKS</div>
+      </li>
+      <li>
+       <div><i class="fa-solid fa-people-arrows" style="height:40px;width:40px;"></i>
+       <br>480M<br>DISTANCE COVERED
+      </div>
+      </li>
+      <li><div>
+        <i class="fa-solid fa-person-digging" style="height:40px;width:40px;"></i>
+        <br>5670M<br>ALTITUDE HIKED
+      </div></li>
+      <li><div>
+       <i class="fa-solid fa-ship" style="height:40px;width:40px;"></i>
+       <BR>180KM<BR>SAILING DISTANCE
+      </div></li>
+      <li><div>
+        <i class="fa-solid fa-mountain-sun" style="height:40px;width:40px;"></i>
+        <BR>570DAYS<BR>SPENT ADVENTURE
+      </div></li>
+      <li><div>
+        <i class="fa-solid fa-house-flood-water-circle-arrow-right" style="height:40px;width:40px;"></i>
+        <BR>567M<BR>JUNGLE DISTANCE
+      </div></li>
+    </ul>
+   </section>
+    <!-- /some Fun section end -->
+
+    <!-- newsletter section start -->
+    <section class="newsletter">
+      <h2>SUBCRIBE FOR OUR TRAVELS NEWSLETTERS</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque consequuntur aut inventore delectus amet dolores nesciunt porro. A pariatur, asperiores natus dignissimos dolorem dicta sapiente itaque porro quas voluptatum iure.</p>
+        <form action="">
+          <label for="newsemail" name="email">Email</label>
+          <input type="email" name="newsemail" id="newsemail" placeholder="Enter your email address"></input>
+          <button type="submit" value="search">SEARCH</button>
+          </form>
+    </section>
+    <!-- /newsletter section end -->
+
+    <!-- Destination section start -->
+    <section class="destination">
+       <h2>POPULAR DESTINATIONS</h2>
+       <UL>
+        <li>
+          <img src="./assets/img/0ne.png" alt=""><br>
+          <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
+          <p>Lorem consectetur adipisicing elit. Cupiditate soluta ex pariatur amet.</p>
+        </li>
+        <li>
+          <img src="./assets/img/two.png" alt="">
+          <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
+          <p>Lorem consectetur adipisicing elit. Cupiditate soluta ex pariatur amet.</p>
+        </li>
+        <li>
+          <img src="./assets/img/three.png" alt="">
+          <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. pariatur amet.</p>
+        </li>
+        <li>
+          <img src="./assets/img/four.png" alt="">
+          <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
+          <p>Lorem ipsum dolor sit amet consectetur Cupiditate soluta ex pariatur amet.</p>
+        </li>
+        <li>
+          <img src="./assets/img/five.png" alt="">
+          <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing  ex pariatur amet.</p>
+        </li>
+        <li>
+          <img src="./assets/img/six.png" alt="">
+          <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
+          <p> Acteatur adipisicing elit. Cupiditate soluta ex pariatur amet.</p>
+        </li>
+        <li>
+          <img src="./assets/img/seven.png" alt="">
+          <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
+          <p>Lorem ipsum dolor sit adipisicing elit. Cupiditate  pariatur amet.</p>
+        </li>
+        <li>
+          <img src="./assets/img/eight.png" alt="">
+          <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
+          <p>Amet consectetur adipisicing elit. Cupiditate soluta ex pariatur amet.</p>
+        </li>
+       </UL>
 
     </section>
-    <!--banner section start-->
+    <!-- /Destination section end -->
 
   <script src="script.js"></script>
   <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>  

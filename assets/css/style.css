@@ -8,6 +8,15 @@ a{
     text-decoration: none;
     color:#fff;
 }
+H2{
+    color:#fff;
+    text-align: center;
+    padding-bottom: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+label{
+    display: none;
+}
 header{
     width:100%;
     height:40px;
@@ -41,32 +50,186 @@ header ul li a.login{
 /* banner section start */
 .banner{
     width:100%;
-    height:500px;
+    height:600px;
     color:#fff;
-    background:url(../img/pic1.png.jpeg);
-    background-size: cover;
+    padding: 0px 125px;
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../img/pic1.png.jpeg);
+    position: relative;
+    background-size: 100% 100%;
 }
-.banner div{
-    width:500px;
-    height:200px;
-    margin-left: 200px;
-}
-.banner div h1{
+.banner h1{
     font-size: 40px;
     font-family:sans-serif;
-    padding-top:70px;
+    top:100px;
     font-weight:100;
-    color: #070000f9;
-    
+    position: absolute;
     
 }
-.banner div h4{
-    padding-top: 20px;
+.banner h4{
+    top: 230px;
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #070000f9;
+    position: absolute;
+}  
+.banner form {
+    width:80%;
+    height:110px;
+    bottom: 50px;
+    display: flex;
+    padding : 2px 2px;
+    position: absolute;
+    justify-content: center;
+    background-color: #43215c;
+}
+.banner form button{
+   width:80px;
+   height:30px;
+   border:none;
+   color:#fff;
+   font-weight: 100;
+   background-color: #552776 ;
 
 }
+.banner form button.active{
+   background-color:#FC2D4C
+}
+.banner form .searchForm label{
+    display: none;
+}
+.banner form .searchForm{
+    margin-top: 8px;
+}
+.banner form .searchForm input,
+.banner form .searchForm select{
+    width:160px;
+    height:30px;
+    margin-right:5px;
+}
+.banner form button.smt{
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    margin-left:30px;
+   margin-top: 10px;
+    background-color:#FC2D4C;
+}
+.banner form ul{
+    list-style: none;
+    position: absolute;
+    top:80px;
     
+}
+.banner form ul li{
+    float:left;
+    padding-left: 10px;
+}
+.banner form .trip select{
+    background:transparent ;
+    border: none;
+    color:#fff;
+}
+.banner form .trip input{
+    background:transparent;
 
-/* banner section start */
+}
+/* banner section end */
+/* some fun section start */
+.fun{
+    width:100%;
+    height:300px;
+    padding:50px 125px;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/piramid.png);
+    background-size: 100% 100%;
+}
+.fun ul{
+    display: flex;
+    justify-content: space-between;
+}
+.fun ul li{
+    width: 130px;
+    height: 125px;
+    color:#fff;
+    text-align: center;
+    padding-top:20px;
+    font-size: 13px;
+    font-weight:normal;
+    list-style: none;
+    background: rgba(0,0,0,0.9);
+}
+.fun ul li div i{
+    width:50px;
+    height:50px;
+}
+/* /some fun section end */
+/* newsletters section start */
+.newsletter{
+    width:100%;
+    padding: 50px 125px;
+    background: url(../img/plane1.png);
+    background-size: 100%  100%;
+}
+.newsletter h2{
+    padding-left: 400px;
+}
+.newsletter p{
+    padding-left:350px;
+    color:#fff;
+    text-align: center; 
+}
+.newsletter form{
+    padding-left: 350px;
+}
+
+.newsletter form input{
+    margin-top: 20px;
+    width:500px;
+    height:50px;
+    margin-left:30px ;
+    background:transparent;
+    border: 2px solid #ffff;
+}
+.newsletter form button{
+    width:110px;
+    height:50px;
+    margin-left:10px;
+}
+::placeholder{
+    color: #fff;
+    padding:20px;
+}
+/* newsletters section end */
+.destination{
+    width:100%;
+    height:auto;
+    color:rgb(35, 35, 73);
+    padding:30px 135px;
+    background-color: #20162F;
+}
+.destination h2{
+    padding-top: 0px;
+}
+.destination ul{
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    grid-template-rows: 280px 280px;
+    grid-gap: 20px;
+}
+.destination ul li{
+   list-style: none;
+   border:2px solid #fff;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fff;
+    
+}
+.destination ul li img{
+    width:100%;
+    height:150px;   
+}
+.destination ul li h4{
+    padding-top:20px;
+}
+.destination ul li p{
+    padding: 10px;
+    font-size: medium;
+}
