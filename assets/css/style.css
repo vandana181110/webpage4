@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
 *{
     margin:0px;
     padding:0px;
@@ -53,7 +55,7 @@ header ul li a.login{
     height:600px;
     color:#fff;
     padding: 0px 125px;
-    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../img/pic1.png.jpeg);
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../img/pic1.png.jpeg);
     position: relative;
     background-size: 100% 100%;
 }
@@ -128,11 +130,14 @@ header ul li a.login{
     border: none;
     color:#fff;
 }
-.banner form .trip input{
-    background:transparent;
+.banner form .trip .box{
+    background: #552776;
 
 }
-/* banner section end */
+.banner form .trip option{
+    background-color: #552776;
+}
+ /* banner section end */
 /* some fun section start */
 .fun{
     width:100%;
@@ -193,15 +198,17 @@ header ul li a.login{
     height:50px;
     margin-left:10px;
 }
-::placeholder{
+.newsletter ::placeholder{
     color: #fff;
     padding:20px;
 }
 /* newsletters section end */
+
+/* destination section start */
 .destination{
     width:100%;
     height:auto;
-    color:rgb(35, 35, 73);
+    color:rgb(42, 42, 98);
     padding:30px 135px;
     background-color: #20162F;
 }
@@ -227,9 +234,191 @@ header ul li a.login{
     height:150px;   
 }
 .destination ul li h4{
-    padding-top:20px;
+    padding-top:15px;
 }
 .destination ul li p{
     padding: 10px;
     font-size: medium;
 }
+/* destination section end
+/* estimate section start */
+.estimate{
+    width:100%;
+    height:auto;;
+    padding:40px 125px;
+    position: relative;
+    background-color:#664CAD;
+}
+.estimate label{
+    display: none;
+}
+.estimate img{
+ position: absolute;
+ HEIGHT:200px;
+ width:200px;
+ bottom: 0;
+ right:0;
+  
+}
+.estimate h2{
+    text-align: left;
+    padding-bottom: 0px;
+    font-weight: 600;
+}
+.estimate h3{
+    color:#fff;
+    font-size: medium;
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+.estimate hr{
+    margin-bottom: 20px;;
+}
+.estimate form select,
+.estimate form input{
+    width:150px;
+    height:35px;
+    margin-right: 8px;
+    
+}
+.estimate form .active{
+    background-color: rgb(248, 135, 22);
+}
+/* /estimate section end */
+/* blog section stART */
+.blog{
+    width:100%;
+    height:auto;
+    padding:40px 125px;
+}
+.blog h2{
+    color:black;
+    padding-bottom: 15px;
+    font-weight: 600;
+}
+.blog .para{
+    text-align: center;
+    color:rgb(40, 40, 87);
+    padding: 0px 200px;
+    padding-bottom: 30px;
+}
+.blog hr{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.blog-content{
+    display: flex;
+    margin: 10px auto;
+}
+.blog-content div{
+    padding:0px 15px;
+    padding-top:-7px;
+}
+.blog-content img{
+    height:120px;
+    float:left;
+    width:120px;
+}
+.blog-content div div{
+  padding-left: 140px;
+}
+.content p{
+    padding-top: 0px;
+    font-size: 15px;
+    color:rgb(40, 40, 87);
+}
+.content h3{
+    font-weight:600;
+    font-size: medium;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* blog section end */
+/* footer section start */
+footer{
+    width:100%;
+    height:auto;
+    padding:40px 125px;
+    background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url(../img/plane.png);
+    background-size: 100% 100%;
+    color:#fff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+footer div{
+    display: flex;
+    justify-content: space-between;
+}
+footer h3{
+    padding-bottom: 15px; 
+    font-size: larger;
+    font-weight: 400; 
+}
+footer .city .s1{
+    font-weight: 300;
+}
+
+footer .sites{
+    display: inline;
+}
+footer .sites .site1 ul li a{
+    font-weight: 300;
+    color:#fff
+}
+footer div ul li{
+    font-weight: 200;
+    list-style: none;
+}
+footer ul li a{
+    color:#918E97;
+}
+footer .site1{
+    display:flex;
+    width:300px;
+    justify-content: space-between;
+}
+footer ul li a span{
+   color:#fff;
+   font-weight: 400;
+}
+footer .sites img{
+    width:15px;
+    height:10px;
+}
+footer .btm-footer
+{   
+    width:100%;
+     padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.btm-footer .naav ul li a{
+    color:#fff;
+    font-weight: 400;
+}
+.btm-footer p{
+    color:#918E97;
+}
+.btm-footer img{
+    width:40px;
+    height:40px;
+}
+.btm-footer .naav{
+    display: inline;
+    padding-right:100px;
+} 
+.naav ul {
+    display: flex;
+    justify-content: space-between;
+}
+.btm-footer .social ul{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.social ul li{
+    padding: 5px;
+}
+
+
+/* footer section end */
+

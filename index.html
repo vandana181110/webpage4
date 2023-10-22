@@ -1,56 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    <!--header section start-->
-    <header>
+  <!--header section start-->
+  <header>
     <ul>
-        <li><a href="javascript:void()"><img src="./assets/img/Logo2.png" height="25px;" width="150px" style="background-color: black;" alt="">
+      <li><a href="javascript:void()"><img src="./assets/img/Logo2.png" height="25px;" width="150px"
+            style="background-color: black;" alt="">
         </a></li>
-        <li><a href="javascript:void()" class="active">Flight</a></li>
-        <li><a href="javascript:void()">Hotel</a></li>
-        <li><a href="javascript:void()">Car Hire</a></li>
-        <li><a href="javascript:void()">Trip Finder</a></li>
+      <li><a href="javascript:void()" class="active">Flight</a></li>
+      <li><a href="javascript:void()">Hotel</a></li>
+      <li><a href="javascript:void()">Car Hire</a></li>
+      <li><a href="javascript:void()">Trip Finder</a></li>
     </ul>
     <ul>
-        <li>
-            <a href="javascript:void()"><i class="fa-regular fa-flag"></i>
-                English</a></li>
-        <li><a href="javascript:void()" class="login">Login</a></li>
+      <li>
+        <a href="javascript:void()"><i class="fa-regular fa-flag"></i>
+          English</a>
+      </li>
+      <li><a href="javascript:void()" class="login">Login</a></li>
     </ul>
-    </header>
-    <!--/header section end-->
-    <!--banner section start-->
-    <section class="banner">
-      <h1>"The best place to find<br> the cheapest airfares"</h1>
-      <h4>-every single time</h4>
-      <form action="">
-        <div>
-          <div class="switchButton">
+  </header>
+  <!--/header section end-->
+  <!--banner section start-->
+  <section class="banner">
+    <h1>"The best place to find<br> the cheapest airfares"</h1>
+    <h4>-every single time</h4>
+    <form action="">
+      <div>
+        <div class="switchButton">
           <button type="button" class="active">
-              <i class="fa-solid fa-plane-departure"></i> Flight</button>
+            <i class="fa-solid fa-plane-departure"></i> Flight</button>
           <button type="button">
-              <i class="fa-solid fa-hotel"></i> Hotels</button>
+            <i class="fa-solid fa-hotel"></i> Hotels</button>
           <button type="button">
-              <i class="fa-solid fa-car"></i> Cars</button><br>
-         </div>
-         <div class="searchForm">
+            <i class="fa-solid fa-car"></i> Cars</button><br>
+        </div>
+        <div class="searchForm">
           <label for="origin-city">Origin city</label>
           <input type="text" name="origin-city" id="origin-city" placeholder="Enter Origin City">
           <span><i class="fa-solid fa-arrow-right-arrow-left" style="color:rgb(166, 239, 239)"></i></span>
-          
+
           <label for="Destination-city-city">Destination city city</label>
           <input type="text" name="destination-city" id="destination-city" placeholder="Enter Destination City">
-          
+
           <label for="trav-start-date">Start Date</label>
           <input type="date" name="trav-start-date" id="trav-start-date" placeholder="Enter start date">
-          
+
           <label for="trav-end-date">End Date</label>
           <input type="date" name="trav-end-date" id="trav-end-date" placeholder="Enter end date">
 
@@ -62,134 +66,483 @@
             <option value="3-pass">passenger-3</option>
             <option value="4-pass">passenger-4</option>
             <option value="5-pass">passenger-5</option>
-           </select>
-          </div> 
+          </select>
+        </div>
         <div class="trip">
           <ul>
-           <li><i class="fa-solid fa-arrows-rotate"></i>
+            <li><i class="fa-solid fa-arrows-rotate"></i>
               <label for="Trip-type">Trip Type</label>
-              <select name="trip type" ide="trip type">
+              <select name="trip type" id="trip type">
                 <option selected>Return Trip</option>
-                <option value="No-Return">Only Go</option>
+                <option value="No-Return">One way</option>
               </select>
-           </li>
-           <li><i class="fa-solid fa-ticket"></i>
-             <label for="Ticket-class">Ticket Class</label>
-               <select name="ticket-class" ide="ticket-class">
+            </li>
+            <li><i class="fa-solid fa-ticket"></i>
+              <label for="Ticket-class">Ticket Class</label>
+              <select name="ticket-class" ide="ticket-class">
                 <option selected value="economy">Economy</option>
                 <option value="primary">Primary</option>
-               </select>
-           </li>
-           <li>
-             <input type="checkbox"> Direct Flight only  
-           </li>
-           <li>
-             <input type="checkbox"> Include Nearby Airport 
-           </li>
+              </select>
+            </li>
+            <li>
+              <input type="checkbox" class="box"> Direct Flight only
+            </li>
+            <li>
+              <input type="checkbox" class="box"> Include Nearby Airport
+            </li>
           </ul>
         </div>
-    </div>
-        <div>
-          <button type="submit" class="smt">Search</button>
-        </div>
-   </form>
-    </section>
-    <!--/banner section end-->
-    <!-- some Fun section start -->
-   <section class="fun">
+      </div>
+      <div>
+        <button type="submit" class="smt">Search</button>
+      </div>
+    </form>
+  </section>
+  <!--/banner section end-->
+  <!-- some Fun section start -->
+  <section class="fun">
     <h2>SOME FUN WE COVERED</h2>
     <ul>
-      <li><div>
-        <i class="fa-solid fa-person-biking" style="height:40px;width:40px;"></i>
-        <br>5670M<BR>CYCLING TRACKS</div>
+      <li>
+        <div>
+          <i class="fa-solid fa-person-biking" style="height:40px;width:40px;"></i>
+          <br>5670M<BR>CYCLING TRACKS
+        </div>
       </li>
       <li>
-       <div><i class="fa-solid fa-people-arrows" style="height:40px;width:40px;"></i>
-       <br>480M<br>DISTANCE COVERED
-      </div>
+        <div><i class="fa-solid fa-people-arrows" style="height:40px;width:40px;"></i>
+          <br>480M<br>DISTANCE COVERED
+        </div>
       </li>
-      <li><div>
-        <i class="fa-solid fa-person-digging" style="height:40px;width:40px;"></i>
-        <br>5670M<br>ALTITUDE HIKED
-      </div></li>
-      <li><div>
-       <i class="fa-solid fa-ship" style="height:40px;width:40px;"></i>
-       <BR>180KM<BR>SAILING DISTANCE
-      </div></li>
-      <li><div>
-        <i class="fa-solid fa-mountain-sun" style="height:40px;width:40px;"></i>
-        <BR>570DAYS<BR>SPENT ADVENTURE
-      </div></li>
-      <li><div>
-        <i class="fa-solid fa-house-flood-water-circle-arrow-right" style="height:40px;width:40px;"></i>
-        <BR>567M<BR>JUNGLE DISTANCE
-      </div></li>
+      <li>
+        <div>
+          <i class="fa-solid fa-person-digging" style="height:40px;width:40px;"></i>
+          <br>5670M<br>ALTITUDE HIKED
+        </div>
+      </li>
+      <li>
+        <div>
+          <i class="fa-solid fa-ship" style="height:40px;width:40px;"></i>
+          <BR>180KM<BR>SAILING DISTANCE
+        </div>
+      </li>
+      <li>
+        <div>
+          <i class="fa-solid fa-mountain-sun" style="height:40px;width:40px;"></i>
+          <BR>570DAYS<BR>SPENT ADVENTURE
+        </div>
+      </li>
+      <li>
+        <div>
+          <i class="fa-solid fa-house-flood-water-circle-arrow-right" style="height:40px;width:40px;"></i>
+          <BR>567M<BR>JUNGLE DISTANCE
+        </div>
+      </li>
     </ul>
-   </section>
-    <!-- /some Fun section end -->
+  </section>
+  <!-- /some Fun section end -->
 
-    <!-- newsletter section start -->
-    <section class="newsletter">
-      <h2>SUBCRIBE FOR OUR TRAVELS NEWSLETTERS</h2>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque consequuntur aut inventore delectus amet dolores nesciunt porro. A pariatur, asperiores natus dignissimos dolorem dicta sapiente itaque porro quas voluptatum iure.</p>
-        <form action="">
-          <label for="newsemail" name="email">Email</label>
-          <input type="email" name="newsemail" id="newsemail" placeholder="Enter your email address"></input>
-          <button type="submit" value="search">SEARCH</button>
-          </form>
-    </section>
-    <!-- /newsletter section end -->
+  <!-- newsletter section start -->
+  <section class="newsletter">
+    <h2>SUBCRIBE FOR OUR TRAVELS NEWSLETTERS</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque consequuntur aut inventore delectus amet dolores
+      nesciunt porro. A pariatur, asperiores natus dignissimos dolorem dicta sapiente itaque porro quas voluptatum iure.
+    </p>
+    <form action="">
+      <label for="newsemail" name="email">Email</label>
+      <input type="email" name="newsemail" id="newsemail" placeholder="Enter your email address"></input>
+      <button type="submit" value="search">SEARCH</button>
+    </form>
+  </section>
+  <!-- /newsletter section end -->
 
-    <!-- Destination section start -->
-    <section class="destination">
-       <h2>POPULAR DESTINATIONS</h2>
-       <UL>
-        <li>
-          <img src="./assets/img/0ne.png" alt=""><br>
-          <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
-          <p>Lorem consectetur adipisicing elit. Cupiditate soluta ex pariatur amet.</p>
-        </li>
-        <li>
-          <img src="./assets/img/two.png" alt="">
-          <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
-          <p>Lorem consectetur adipisicing elit. Cupiditate soluta ex pariatur amet.</p>
-        </li>
-        <li>
-          <img src="./assets/img/three.png" alt="">
-          <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. pariatur amet.</p>
-        </li>
-        <li>
-          <img src="./assets/img/four.png" alt="">
-          <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
-          <p>Lorem ipsum dolor sit amet consectetur Cupiditate soluta ex pariatur amet.</p>
-        </li>
-        <li>
-          <img src="./assets/img/five.png" alt="">
-          <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing  ex pariatur amet.</p>
-        </li>
-        <li>
-          <img src="./assets/img/six.png" alt="">
-          <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
-          <p> Acteatur adipisicing elit. Cupiditate soluta ex pariatur amet.</p>
-        </li>
-        <li>
-          <img src="./assets/img/seven.png" alt="">
-          <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
-          <p>Lorem ipsum dolor sit adipisicing elit. Cupiditate  pariatur amet.</p>
-        </li>
-        <li>
-          <img src="./assets/img/eight.png" alt="">
-          <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
-          <p>Amet consectetur adipisicing elit. Cupiditate soluta ex pariatur amet.</p>
-        </li>
-       </UL>
+  <!-- Destination section start -->
+  <section class="destination">
+    <h2>POPULAR DESTINATIONS</h2>
+    <UL>
+      <li>
+        <img src="./assets/img/0ne.png" alt=""><br>
+        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
+        <p>Lorem consectetur adipisicing elit. Cupiditate soluta ex pariatur amet.</p>
+      </li>
+      <li>
+        <img src="./assets/img/two.png" alt="">
+        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
+        <p>Lorem consectetur adipisicing elit. Cupiditate soluta ex pariatur amet.</p>
+      </li>
+      <li>
+        <img src="./assets/img/three.png" alt="">
+        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. pariatur amet.</p>
+      </li>
+      <li>
+        <img src="./assets/img/four.png" alt="">
+        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
+        <p>Lorem ipsum dolor sit amet consectetur Cupiditate soluta ex pariatur amet.</p>
+      </li>
+      <li>
+        <img src="./assets/img/five.png" alt="">
+        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing ex pariatur amet.</p>
+      </li>
+      <li>
+        <img src="./assets/img/six.png" alt="">
+        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
+        <p> Acteatur adipisicing elit. Cupiditate soluta ex pariatur amet.</p>
+      </li>
+      <li>
+        <img src="./assets/img/seven.png" alt="">
+        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
+        <p>Lorem ipsum dolor sit adipisicing elit. Cupiditate pariatur amet.</p>
+      </li>
+      <li>
+        <img src="./assets/img/eight.png" alt="">
+        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
+        <p>Amet consectetur adipisicing elit. Cupiditate soluta ex pariatur amet.</p>
+      </li>
+    </UL>
+  </section>
+  <!-- /Destination section end -->
 
-    </section>
-    <!-- /Destination section end -->
+  <!-- estimste section start -->
+  <section class="estimate">
+    <h2>GET A QUICK ESTIMATE!</h2>
+    <h3>GET A PROFESSIONAL HELP</h3>
+    <hr width="50px;">
+    <FORM>
+      <label for="purpose">purpose</label>
+      <select name="purpose" id="purpose">
+        <option value="travel">Travel purpose</option>
+        <option value="Business">Bisiness</option>
+        <option value="medical">Medical</option>
+        <option value="sport">Sports</option>
+      </select>
+      <label for="tdate">Travel Date</label>
+      <input type="date" name="tdate" id="" placeholder="Travel date">
+      <label for="pupose">Purpose</label>
+      <select name="purpose" id="purpose">
+        <option value="people">No of people</option>
+        <option value="travel">1</option>
+        <option value="Business">2</option>
+        <option value="medical">3</option>
+        <option value="sport">4</option>
+      </select>
+      <label for="email">Email</label>
+      <input type="email" name="" id="" placeholder="Enter Email">
+      <label for="calculate"></label>
+      <input type="submit" value="CALCULATE NOW" CLASS="active">
+    </FORM>
+    <img src="./assets/img/rome.png" alt="" width="200px" height="300px">
+  </section>
+  <!-- /estimste section end -->
 
+  <!-- blog section start -->
+  <section class="blog">
+    <h2>LATEST BLOG</h2>
+    <P class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum,labore   provident unde incidunt inventore eveniet sit amet consectetur adipisicing elit. Ducimus.</P>
+    <div class="blog-content">
+      <div>
+        <img src="./assets/img/two.png" alt="">
+          <div class="content">
+           <p>feb 01,2016</p>
+           <h3>10 THING TODO BEFORE TRAVEL </h3>
+           <HR width="50" color="red" size="4px">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, laborum aspernatur.fuga illum. Veritatis
+            animi sint omnis. Vero, minus quod? Earum.
+          </p>
+        </div>
+      </div>
+      <div>
+        <img src="./assets/img/baby.png.jpeg" alt="">
+        <div class="content">
+          <p>Jan 23,2016</p>
+          <h3>SAY NO TO LAZY LIFE </h3>
+          <HR width="50" color="green" size="4px">
+          <p> Nobis, laborum aspernatur. Similique, eveniet ex qui consectetur amet dolore numquam fuga illum. Veritatis
+            animi sint omnis. Vero, minus quod? Earum.
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- /blog section end -->
+
+  <!-- footer section start -->
+  <footer>
+    <div>
+      <div class="Countries">
+        <ul>
+          <h3>Top Countries</h3>
+          <li>
+            <a href="javascript:void()">
+              <i class="fa-solid fa-earth-americas"></i> 
+              Flights to<span> United Kingdom</span>
+            </a> 
+          </li>
+            <li>
+              <a href="javascript:void()">
+              <i class="fa-solid fa-earth-americas"></i>
+              Flights to <span>United States</span>
+            </a>
+          </li>
+            <li>
+              <a href="javascript:void()">
+              <i class="fa-solid fa-earth-americas"></i>
+              Flights to<span> Spaine</span>
+            </a>
+          </li>
+            <li value="thailand">
+              <a href="javascript:void()">
+              <i class="fa-solid fa-earth-americas"></i>
+              Flights to<span> Thailand</span> 
+            </a>
+          </li>
+            <li value="brazil">
+              <a href="javascript:void()">
+              <i class="fa-solid fa-earth-americas"></i>
+              Flights to <span>Brazil</span>
+            </a>
+          </li>
+            <li value="india">
+              <a href="javascript:void()">
+              <i class="fa-solid fa-earth-americas"></i>
+              Flights to<span> India</span>
+            </a>
+          </li>
+          <li value="italy">
+            <a href="javascript:void()">
+              <i class="fa-solid fa-earth-americas"></i>
+              Flights to<span> Italy</span>
+            </a>
+          </li>
+          <li value="koria">
+            <a href="javascript:void()">
+            <i class="fa-solid fa-earth-americas"></i>
+            Flights to<span> Koria</span>
+            </a>
+          </li>
+          <li value="germany">
+            <a href="javascript:void()">
+              <i class="fa-solid fa-earth-americas"></i>
+              Flights to<span> Germany</span>
+            </a>
+          </li>
+          <li value="france">
+            <a href="javascript:void()">
+              <i class="fa-solid fa-earth-americas"></i>
+              Flights to<span> France</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="city">
+        <ul>
+          <h3>Top Cities</h3>
+          <li value="Uk">
+            <a href="javascript:void()">
+              <i class="fa-solid fa-location-dot"></i>
+              Flights to <span>London</span>,<span class="s1">United Kingdom</span>
+            </a>
+          </li>
+          <li value="Us">
+            <a href="javascript:void()">
+            <i class="fa-solid fa-location-dot"></i>
+              Flights to <span>New York</span>,<span class="s1"> United States</span>
+            </a>
+          </li>
+          <li value="spain">
+            <a href="javascript:void()">
+            <i class="fa-solid fa-location-dot"></i>
+              Flights to <span>Hong Kong</span>,<span class="s1"> Spaine</span>
+            </a>
+          </li>
+          <li value="thailand">
+            <a href="javascript:void()">
+            <i class="fa-solid fa-location-dot"></i>
+              Flights to <span>Bancok</span>,<span class="s1">Thailand</span>
+            </a>
+          </li>
+          <li value="brazil">
+            <a href="javascript:void()">
+            <i class="fa-solid fa-location-dot"></i>
+              Flights to <span>Singapor</span>,<span class="s1"> Singapor</span>
+            </a>
+          </li>
+          <li value="india">
+            <a href="javascript:void()">
+              <i class="fa-solid fa-location-dot"></i>
+              Flights to <span>Delhi</span>,<span class="s1"> India</span>
+            </a>
+          </li>
+          <li value="italy">
+            <a href="javascript:void()">
+              <i class="fa-solid fa-location-dot"></i>
+              Flights to <span>Istambul</span>,<span class="s1"> Turkey</span>
+            </a>
+          </li>
+          <li value="koria">
+            <a href="javascript:void()">
+              <i class="fa-solid fa-location-dot"></i>
+              Flights to <span>Dubai</span>,<span class="s1"> United Arab Emirates</span>
+              </a>
+          </li>
+          <li value="germany">
+            <a href="javascript:void()">
+            <i class="fa-solid fa-location-dot"></i>
+              FLights to <span>Oxfard</span>,<span class="s1">United State</span>
+            </a>
+          </li>
+          <li value="france">
+              <a href="javascript:void()">
+              <i class="fa-solid fa-location-dot"></i>
+                Flights to <span>Paris</span>,<span class="s1"> France</span>
+              </a>
+          </li>
+        </ul>
+      </div>
+      <div class="sites">
+        <h3>International Sites</h3>
+        <div class="site1">
+        <ul>
+          <li>
+            <a href="javascript:void()">
+            <img src="./assets/img/afgani.png" alt="">
+            Billing Flybillletter
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void()">
+            <img src="./assets/img/albania.png" alt="">
+            Cheap Flight
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void()">
+            <img src="./assets/img/algeria.png" alt="">
+            Flight
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void()">
+            <img src="./assets/img/andorra.png" alt="">
+            Vueles Baratus
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void()">
+            <img src="./assets/img/angola.png" alt="">
+            Halvat Lennot
+            </a>
+            </li>
+          <li>
+            <a href="javascript:void()">
+            <img src="./assets/img/austelia.png" alt="">
+            Vol Pas cher
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void()">
+            <img src="./assets/img/bahamans.png" alt="">
+            Voli low cast
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="javascript:void()">
+            <img src="./assets/img/bootan.png" alt="">
+            Billing flybillleter
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void()">
+            <img src="./assets/img/den.png" alt="">
+            Uoos Baratos
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void()">
+            <img src="./assets/img/nepal.png" alt="">
+            Flygresor
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void()">
+            <img src="./assets/img/india.png" alt="">
+            Uoos Baratos
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void()">
+            <img src="./assets/img/indo.png" alt="">
+            Indonetia
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void()">
+            <img src="./assets/img/france.png" alt="">
+            France
+            </a>
+          </li>
+        </ul>
+        </div>
+      </div>
+    </div>
+    <div class="btm-footer">
+        <div>
+          <img src="./assets/img/momo.png"  alt="">
+        </div>
+        <div class="naav">
+        <ul>
+            <li> 
+              <a href="javascript:void()">About Us</a>
+            </li>
+            <li>
+              <a href="javascript:void()">Press</a>
+            </li>
+            <li>
+              <a href="javascript:void()">Jobs</a>
+            </li>
+            <li>
+              <a href="javascript:void()">Affilite</a>
+            </li>
+            <li>
+              <a href="javascript:void()">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="javascript:void()">Terms of Use</a>
+            </li>
+            <li>
+              <a href="javascript:void()">Cookies</a>
+            </li>
+            <li>
+              <a href="javascript:void()">Airlines</a>
+            </li>
+            <li>
+              <a href="javascript:void()">Apps</a>
+            </li>
+            <li>
+              <a href="javascript:void()">Helps</a>
+            </li>
+        </ul>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quae natus quasi facilis doloremque ducimus 
+        </P>
+          
+        </div>
+        <div class="social">
+          <ul>
+            <li> <a href="javascript:void()"><i class="fa-brands fa-twitter"></i></a></li>
+            <li> <a href="javascript:void()"><i class="fa-brands fa-facebook"></i></a></li>
+            <li> <a href="javascript:void()"><i class="fa-brands fa-google"></i></a></li>
+          </ul>
+        </div>
+     </div>
+  </footer>
+  <!-- footer section end -->
   <script src="./assets/js/script.js"></script>
-  <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>  
+  <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
 </body>
+
 </html>
