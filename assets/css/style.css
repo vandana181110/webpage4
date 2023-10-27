@@ -524,8 +524,8 @@ footer .btm-footer
     
     header,.banner,.fun,.newsletter,.destination,
     .estimate,.blog,footer{
-        padding-left:5px;
-        padding-right: 5px;    
+        padding-left:15px;
+        padding-right: 15px;    
     }
     header img{
         height: 18px;
@@ -553,7 +553,8 @@ footer .btm-footer
         grid-template-rows:auto;
         grid-gap: 3%;
         margin-left:8%;
-    }.newsletter h2{
+    }
+    .newsletter h2{
         margin-left:-75%;
     }
     .newsletter p{
@@ -616,4 +617,109 @@ footer .btm-footer
     }
 
 }
+@media only screen and (max-width:575px) and (min-width:425px){
+    header,.banner,.fun,.newsletter,.destination,
+    .estimate,.blog,footer{
+        padding-left:0px;
+        padding-right: 0px;    
+    }
+    header img{
+        height: 18px;
+        width: 99px;
+    }
+    .banner h1{
+    font-size:177%;
+    top:10%;
+    padding-left:10%;
+    }
+    .banner h4{
+     top: 24%;
+    font-size: 90%;
+    padding-left:10%;
+    }
+    .banner form{
+        margin-left:8%;
+    }
+    .banner form button{
+        width:32%;
+    }
+    .fun{
+        padding-right: 28px;
+        height: auto;
+    }
+    .fun ul{
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows:auto;
+        grid-gap: 3%;
+        margin-left:8%;
+    }
+    .fun ul li{
+        width:96%;
+    }
+    .newsletter h2{
+        padding-left:80%;
+        margin-left:-75%;
+    }
+    .newsletter p{
+        padding-left:60%;
+        margin-left:-58%;
+
+    }
+    .newsletter form input{
+        margin-left: -290%;
+    width: 218%;
+    }
+    .destination{
+        padding:5% 5%;
+        padding-bottom: 30%;
+    }
+    .destination ul{
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        grid-template-rows:auto;
+        grid-gap: 3%;
+    }
+    .estimate form select, .estimate form input {
+        width: 25%;
+        height: 31px;
+        margin-right: -2px;
+    }
+    .estimate img{
+        width:26%;
+    }
+    .blog {
+        padding: 8px 10px;
+    }
+    .blog .para {
+     padding:0%;
+    }
+     .blog-content{
+        display: block;
+     }
+     .blog-content div {
+        padding: 10px 0px;
+     }
+     footer div {
+        display: block;
+        padding:0% 5%;
+    }
+    footer h3{
+        padding:2% 10%;
+    }
+    footer .site1 {
+        width:95%;
+    }
+    .btm-footer img {
+        margin-left: 40%;
+    }
+    footer .btm-footer{
+        display: block;
+        font-size: 73%;
+    }
+    .btm-footer .social ul {
+        justify-content: center;
+    }
+}
+
 /* media query secton end*/
