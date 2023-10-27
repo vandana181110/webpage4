@@ -74,21 +74,22 @@ header ul li a.login{
     position: absolute;
 }  
 .banner form {
-    width:80%;
-    height:110px;
+    width:84%;
+    height:auto;
     bottom: 50px;
     display: flex;
-    padding : 2px 2px;
+    padding : 5px 8px;
     position: absolute;
-    justify-content: center;
+    align-items: center;
+
     background-color: #43215c;
 }
 .banner form button{
-   width:80px;
+   width:90px;
    height:30px;
    border:none;
    color:#fff;
-   font-weight: 100;
+   font-weight: 500;
    background-color: #552776 ;
 
 }
@@ -111,13 +112,13 @@ header ul li a.login{
     width:80px;
     height:80px;
     border-radius: 50%;
-    margin-left:30px;
+    margin-left:40px;
    margin-top: 10px;
     background-color:#FC2D4C;
 }
 .banner form ul{
     list-style: none;
-    position: absolute;
+  
     top:80px;
     
 }
@@ -126,9 +127,11 @@ header ul li a.login{
     padding-left: 10px;
 }
 .banner form .trip select{
-    background:transparent ;
     border: none;
     color:#fff;
+}
+.banner form .trip{
+    padding-top: 15px;
 }
 .banner form .trip .box{
     background: #552776;
@@ -187,7 +190,7 @@ header ul li a.login{
 
 .newsletter form input{
     margin-top: 20px;
-    width:500px;
+    width:400px;
     height:50px;
     margin-left:30px ;
     background:transparent;
@@ -239,6 +242,9 @@ header ul li a.login{
 .destination ul li p{
     padding: 10px;
     font-size: medium;
+}
+.destination .number{
+    color:rgb(179, 41, 41);
 }
 /* destination section end
 /* estimate section start */
@@ -418,7 +424,196 @@ footer .btm-footer
 .social ul li{
     padding: 5px;
 }
-
-
 /* footer section end */
 
+/* media query section start */
+ @media only screen and (max-width:1190px) and (min-width:992px){
+    header,.banner,.fun,.newsletter,
+    .estimate,.blog,footer{
+        padding-left:50px;
+        padding-right: 50px;
+    }
+    .banner form .searchForm input,
+    .banner form .searchForm select{
+     width:18%;
+    }
+    .newsletter form input{
+        width:70%;  
+    }    
+    .destination ul li h4{
+        padding-top:0px;
+        font-size: medium;
+    }
+    .destination ul li p{
+        padding: 0px;
+        font-size:small;
+    }
+    .estimate{
+        width:106%;
+    }
+ }
+ @media only screen and (max-width:992px) and (min-width:768px){ 
+    header,.banner,.fun,.newsletter,
+    .estimate,.blog,footer{
+        padding-left:10px;
+        padding-right: 10px;
+    }
+    .banner form .searchForm input,
+    .banner form .searchForm select{
+        width: 16%;
+    }
+    .banner h1{
+        margin-left:5%;
+    }
+    .banner h4{
+        margin-left:10%;
+    }
+    .banner form ul li {
+        padding-left: 0px;
+    }
+    .banner form{
+        margin-left:50px;
+    }
+    .banner form button .smt{
+        margin-left: -75%;
+    }
+    .fun ul li {   
+        width: 16%;
+        font-size: 65%;
+    }
+    .newsletter form input{
+        padding-left:-86%;
+        width:86%;
+        margin-left: -21%;
+    }
+    .newsletter h2{
+        padding-left:17%;
+        margin-left:-25%;
+    }
+
+    .newsletter p{
+        padding-left:23%;
+        margin-left: -7%;
+    }
+    .destination{
+        padding:32px; 
+    }
+
+    .destination ul li h4{
+        padding-top:5px;
+    }
+    .destination ul li p{
+        padding: 2px;
+        font-size:small;
+    }
+    .estimate form input{
+        width:14%;
+        margin-right: 0%;
+    }
+    .estimate form select{
+        width:13%; 
+    }
+    .estimate form .active {
+        font-size: 70%;
+    }
+    footer{
+        font-size: 84%;
+    }
+}
+@media only screen and (max-width:767px) and (min-width:576px){
+    
+    header,.banner,.fun,.newsletter,.destination,
+    .estimate,.blog,footer{
+        padding-left:5px;
+        padding-right: 5px;    
+    }
+    header img{
+        height: 18px;
+        width: 99px;
+    }
+    .banner h1{
+    font-size:177%;
+    top:10%;
+    padding-left:10%;
+    }
+    .banner h4{
+     top: 24%;
+    font-size: 90%;
+    padding-left:10%;
+    }
+    .banner form{
+        margin-left:8%;
+    }
+    .fun{
+        height: auto;
+    }
+    .fun ul{
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows:auto;
+        grid-gap: 3%;
+        margin-left:8%;
+    }.newsletter h2{
+        margin-left:-75%;
+    }
+    .newsletter p{
+        margin-left:-58%;
+
+    }
+    .newsletter form input{
+        margin-left:-86%;
+        width:86%;
+    }
+    .destination{
+        padding:5% 5%;
+        padding-bottom: 22%;
+    }
+    .destination ul{
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        grid-template-rows:auto;
+        grid-gap: 3%;
+    }
+    .estimate form select, .estimate form input {
+        width: 25%;
+        height: 31px;
+        margin-right: -2px;
+    }
+    .estimate img{
+        width:26%;
+    }
+    .blog {
+        padding:10px 50px;
+    }
+    .blog .para {
+     padding:0%;
+    }
+     .blog-content{
+        display: block;
+     }
+     .blog-content div {
+        padding: 10px 0px;
+     }
+     footer div {
+        display: block;
+        padding:0% 10%;
+    }
+    footer h3{
+        padding:2% 10%;
+    }
+    footer .site1 {
+        width:95%;
+    }
+    .btm-footer img {
+        margin-left: 40%;
+    }
+    footer .btm-footer{
+        display: block;
+        font-size: 73%;
+    }
+    .btm-footer .social ul {
+        justify-content: center;
+    }
+
+}
+/* media query secton end*/
